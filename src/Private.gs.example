@@ -1,0 +1,19 @@
+/**
+ * Gmail Cleanup – personal configuration.
+ *
+ * Copy this file to Private.gs (same folder). Private.gs is git-ignored, so the people
+ * you protect never end up in the repository. clasp still pushes it to Apps Script.
+ * Without Private.gs the tool runs with no protected senders.
+ *
+ * Senders matched here are NEVER trashed – whatever the rules, settings or labels say.
+ * The check runs when a message is classified AND again right before every trash.
+ */
+const PRIVATE = {
+  // Sender addresses, e.g. a family domain and a personal address:
+  //   /(@|\.)family-domain\.example$|^grandma\.smith@gmail\.com$/i
+  PROTECTED_ADDRESSES: null,
+
+  // Sender display names, whatever address they write from:
+  //   /\b(anna|peter) smith\b/i
+  PROTECTED_NAMES: null
+};

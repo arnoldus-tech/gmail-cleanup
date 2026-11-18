@@ -1,0 +1,23 @@
+# Personal configuration: the senders you protect – never commit
+src/Private.gs
+
+# clasp: project binding and login credentials are personal – never commit
+.clasp.json
+.clasp.*.json
+.clasprc.json
+
+# Data exports must never be committed (the data lives in Google Sheets)
+*.xlsx
+*.csv
+*.eml
+exports/
+
+# Local backups of the live Apps Script project
+_backup/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+node_modules/

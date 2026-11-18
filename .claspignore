@@ -1,0 +1,3 @@
+# clasp rootDir is src – push all Apps Script sources in it (including the git-ignored Private.gs)
+**/*.md
+**/*.example
